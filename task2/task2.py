@@ -26,7 +26,7 @@ def check_point_position(circle, point):
     else:
         return 2  # Точка снаружи
 
-def main():
+if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: python script.py <circle_file> <points_file>")
         sys.exit(1)
@@ -45,5 +45,3 @@ def main():
         position = check_point_position(circle, point)
         print(position)
 
-if __name__ == "__main__":
-    main()
