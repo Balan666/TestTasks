@@ -9,7 +9,7 @@ def min_moves_to_equal(nums):
     median = nums[len(nums) // 2]
     return sum(abs(num - median) for num in nums)
 
-def main():
+if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python script.py <input_file>")
         sys.exit(1)
@@ -24,5 +24,4 @@ def main():
         print(f"Error processing file: {e}")
         sys.exit(1)
 
-if __name__ == "__main__":
-    main()
+
